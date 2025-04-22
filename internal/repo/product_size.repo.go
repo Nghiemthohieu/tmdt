@@ -6,6 +6,8 @@ import (
 	"mtb_web/global"
 	"mtb_web/internal/models"
 
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
@@ -37,9 +39,17 @@ func (r *ProductSizeRepo) GetProductSizeByID(id string) (*models.ProductSize, in
 		return nil, 20014, errors.New("id cannot be empty")
 	}
 
-	var productSize models.ProductSize
-	err := r.Collection.FindOne(context.TODO(), map[string]interface{}{"_id": id}).Decode(&productSize)
+	objectID, err := primitive.ObjectIDFromHex(id)
 	if err != nil {
+		return nil, 20014, errors.New("invalid object id format")
+	}
+
+	var productSize models.ProductSize
+	err = r.Collection.FindOne(context.TODO(), bson.M{"_id": objectID}).Decode(&productSize)
+	if err != nil {
+		if err == mongo.ErrNoDocuments {
+			return nil, 20014, errors.New("no document found with given id")
+		}
 		return nil, 20014, err
 	}
 
@@ -86,9 +96,17 @@ func (r *ProductSizeRepo) DeleteProductSize(id string) (int, error) {
 		return 20013, errors.New("id cannot be empty")
 	}
 
-	_, err := r.Collection.DeleteOne(context.TODO(), map[string]interface{}{"_id": id})
+	objectID, err := primitive.ObjectIDFromHex(id)
+	if err != nil {
+		return 20013, errors.New("invalid object id format")
+	}
+
+	res, err := r.Collection.DeleteOne(context.TODO(), bson.M{"_id": objectID})
 	if err != nil {
 		return 20013, err
+	}
+	if res.DeletedCount == 0 {
+		return 20014, errors.New("no document found to delete")
 	}
 
 	return 20001, nil

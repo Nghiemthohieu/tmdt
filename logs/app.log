@@ -11,3 +11,49 @@
 {"level":"INFO","time":"2025-04-20T14:13:57.384Z","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
 {"level":"INFO","time":"2025-04-20T14:13:58.016Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
 {"level":"INFO","time":"2025-04-20T14:13:58.016Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T17:10:24.293Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T17:10:25.104Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T17:10:25.104Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T17:11:27.769Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.048524714}
+{"level":"INFO","time":"2025-04-21T17:11:37.942Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.029836626}
+{"level":"INFO","time":"2025-04-21T17:11:42.052Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.034348925}
+{"level":"INFO","time":"2025-04-21T17:11:46.539Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.030042411}
+{"level":"INFO","time":"2025-04-21T17:12:02.552Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.026395546}
+{"level":"INFO","time":"2025-04-21T17:12:24.527Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/get/68067c3f0bd760822ac25f6c","method":"GET","status":500,"duration":0.027011065}
+{"level":"INFO","time":"2025-04-21T17:12:53.632Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/get/68067c3f0bd760822ac25f6c","method":"GET","status":500,"duration":0.027300248}
+{"level":"INFO","time":"2025-04-21T17:13:01.410Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.026277446}
+{"level":"INFO","time":"2025-04-21T17:13:20.018Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/get/68067c3f0bd760822ac25f6c","method":"GET","status":500,"duration":0.02695609}
+{"level":"INFO","time":"2025-04-21T17:14:21.035Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T17:14:21.849Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T17:14:21.849Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T17:14:24.580Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/get/68067c3f0bd760822ac25f6c","method":"GET","status":500,"duration":0.028722798}
+{"level":"INFO","time":"2025-04-21T17:16:30.418Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T17:16:31.083Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T17:16:31.083Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T17:16:33.575Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/get/68067c3f0bd760822ac25f6c","method":"GET","status":200,"duration":0.036209621}
+{"level":"INFO","time":"2025-04-21T17:19:02.931Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"PUT","status":200,"duration":0.042576198}
+{"level":"INFO","time":"2025-04-21T17:19:13.478Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"PUT","status":200,"duration":0.031464}
+{"level":"INFO","time":"2025-04-21T17:19:36.140Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/delete/68067c3f0bd760822ac25f6c","method":"DELETE","status":200,"duration":0.028294606}
+{"level":"INFO","time":"2025-04-21T17:19:48.437Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.029596811}
+{"level":"INFO","time":"2025-04-21T17:21:09.281Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"PUT","status":200,"duration":0.040184806}
+{"level":"INFO","time":"2025-04-21T17:21:23.953Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.029157488}
+{"level":"INFO","time":"2025-04-21T17:22:05.063Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/delete/68067c490bd760822ac25f6d","method":"DELETE","status":200,"duration":0.030766292}
+{"level":"INFO","time":"2025-04-21T17:22:14.839Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.028441843}
+{"level":"INFO","time":"2025-04-21T17:22:50.601Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.027845965}
+{"level":"INFO","time":"2025-04-21T17:23:33.947Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T17:23:35.359Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T17:23:35.359Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T17:23:53.194Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/delete/68067c490bd760822ac25f6d","method":"DELETE","status":200,"duration":0.028121238}
+{"level":"INFO","time":"2025-04-21T17:23:59.134Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.026775176}
+{"level":"INFO","time":"2025-04-21T17:24:03.791Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.026705206}
+{"level":"INFO","time":"2025-04-21T17:24:11.326Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/delete/68067c490bd760822ac25f6d","method":"DELETE","status":200,"duration":0.029535051}
+{"level":"INFO","time":"2025-04-21T17:24:15.497Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.026656095}
+{"level":"INFO","time":"2025-04-21T17:26:00.800Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T17:26:01.408Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T17:26:01.408Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T17:26:04.369Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.03137646}
+{"level":"INFO","time":"2025-04-21T17:26:07.503Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/delete/68067c490bd760822ac25f6d","method":"DELETE","status":200,"duration":0.029909634}
+{"level":"INFO","time":"2025-04-21T17:27:04.096Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/get/68067c490bd760822ac25f6d","method":"GET","status":500,"duration":0.026377317}
+{"level":"INFO","time":"2025-04-21T17:27:07.898Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.025601193}
+{"level":"INFO","time":"2025-04-21T17:27:42.586Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.048462174}
+{"level":"INFO","time":"2025-04-21T17:27:47.556Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.026639754}

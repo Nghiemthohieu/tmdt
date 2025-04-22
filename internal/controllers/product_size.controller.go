@@ -12,9 +12,9 @@ type ProductSizeController struct {
 	ProductSizeService *services.ProductSizeService
 }
 
-func NewProductSizeController(productSizeService *services.ProductSizeService) *ProductSizeController {
+func NewProductSizeController() *ProductSizeController {
 	return &ProductSizeController{
-		ProductSizeService: productSizeService,
+		ProductSizeService: services.NewProductSizeService(),
 	}
 }
 

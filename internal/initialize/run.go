@@ -3,7 +3,6 @@ package initialize
 import (
 	"fmt"
 	"mtb_web/global"
-	"mtb_web/internal/router"
 
 	"go.uber.org/zap"
 )
@@ -25,7 +24,7 @@ func Run() {
 	}()
 	InitAws()
 
-	r := router.NewRouter()
+	r := NewRouter()
 
 	// Start server on port 8080
 	r.Run()

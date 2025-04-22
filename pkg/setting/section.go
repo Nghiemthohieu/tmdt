@@ -4,9 +4,15 @@ type Config struct {
 	Logger LoggerSettings  `mapstructure:"logger"`
 	Mysql  MySQLSettings   `mapstructure:"mysql"`
 	Redis  RedisSettings   `mapstructure:"redis"`
-	AwsS3  AWSS3Settings   `mapstructure:"aws_s3"`
-	Gmail  GmailSettings   `mapstructure:"gmail"`
+	AwsS3  AWSS3Settings   `mapstructure:"awsS3"`
+	Gmail  GmailSettings   `mapstructure:"Gmail"`
 	Mongo  MongoDBSettings `mapstructure:"mongo"`
+	Server ServerSettings  `mapstructure:"server"`
+}
+
+type ServerSettings struct {
+	Port int    `mapstructure:"port"`
+	Mode string `mapstructure:"mode"`
 }
 
 type LoggerSettings struct {
